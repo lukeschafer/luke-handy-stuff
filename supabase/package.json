@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "npx supabase start",
+    "test": "npx supabase test db",
+    "db:reset" : "npx supabase db reset",
+    "functions:local" : "npx supabase functions serve --env-file ./supabase/.env.local",
+    "typegen": "npx supabase gen types typescript --local > ./supabase/functions/shared/models/database.types.ts"
+  },
+  "devDependencies": {
+    "supabase": "^1.64.8"
+  }
+}
